@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  HomeViewController.swift
 //  VIPER-practice
 //
 //  Created by 上條栞汰 on 2022/12/08.
@@ -7,11 +7,11 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+final class HomeViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        view.backgroundColor = .red
     }
 
 
