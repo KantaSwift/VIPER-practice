@@ -9,20 +9,22 @@
 /* Begin PBXBuildFile section */
 		B25B95A9294190EB003FDDF7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B25B95A8294190EB003FDDF7 /* AppDelegate.swift */; };
 		B25B95AB294190EB003FDDF7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B25B95AA294190EB003FDDF7 /* SceneDelegate.swift */; };
-		B25B95AD294190EB003FDDF7 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B25B95AC294190EB003FDDF7 /* HomeViewController.swift */; };
+		B25B95AD294190EB003FDDF7 /* ArticleListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B25B95AC294190EB003FDDF7 /* ArticleListViewController.swift */; };
 		B25B95B2294190EC003FDDF7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B25B95B1294190EC003FDDF7 /* Assets.xcassets */; };
 		B25B95B5294190EC003FDDF7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B25B95B3294190EC003FDDF7 /* LaunchScreen.storyboard */; };
 		B25B95BE294193C3003FDDF7 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = B25B95BD294193C3003FDDF7 /* SnapKit */; };
+		B25B9613294481B9003FDDF7 /* SearchPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B25B9612294481B9003FDDF7 /* SearchPresenter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		B25B95A5294190EB003FDDF7 /* VIPER-practice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "VIPER-practice.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B25B95A8294190EB003FDDF7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B25B95AA294190EB003FDDF7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		B25B95AC294190EB003FDDF7 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		B25B95AC294190EB003FDDF7 /* ArticleListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleListViewController.swift; sourceTree = "<group>"; };
 		B25B95B1294190EC003FDDF7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B25B95B4294190EC003FDDF7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B25B95B6294190EC003FDDF7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B25B9612294481B9003FDDF7 /* SearchPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchPresenter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,14 +58,31 @@
 		B25B95A7294190EB003FDDF7 /* VIPER-practice */ = {
 			isa = PBXGroup;
 			children = (
+				B25B9614294484A6003FDDF7 /* Presenter */,
+				B25B95BF2941A4C3003FDDF7 /* Controller */,
 				B25B95A8294190EB003FDDF7 /* AppDelegate.swift */,
 				B25B95AA294190EB003FDDF7 /* SceneDelegate.swift */,
-				B25B95AC294190EB003FDDF7 /* HomeViewController.swift */,
 				B25B95B1294190EC003FDDF7 /* Assets.xcassets */,
 				B25B95B3294190EC003FDDF7 /* LaunchScreen.storyboard */,
 				B25B95B6294190EC003FDDF7 /* Info.plist */,
 			);
 			path = "VIPER-practice";
+			sourceTree = "<group>";
+		};
+		B25B95BF2941A4C3003FDDF7 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				B25B95AC294190EB003FDDF7 /* ArticleListViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		B25B9614294484A6003FDDF7 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				B25B9612294481B9003FDDF7 /* SearchPresenter.swift */,
+			);
+			path = Presenter;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -142,8 +161,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B25B95AD294190EB003FDDF7 /* HomeViewController.swift in Sources */,
+				B25B95AD294190EB003FDDF7 /* ArticleListViewController.swift in Sources */,
 				B25B95A9294190EB003FDDF7 /* AppDelegate.swift in Sources */,
+				B25B9613294481B9003FDDF7 /* SearchPresenter.swift in Sources */,
 				B25B95AB294190EB003FDDF7 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
